@@ -25,7 +25,8 @@ daftar isi:
   * [nginx config](#nginx-config)
   * [web.config in public](#web.config-in-public)
   * [allow all permision logs,framework,views,photo](#allow-all-permision-logs,framework,views,photo)
-
+  * [add ssl](#add-ssl)
+* [contributors](#contributors)
 
 
 
