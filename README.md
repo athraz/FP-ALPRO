@@ -194,7 +194,12 @@ server {
 sudo chmod -R 777 storage
 sudo chmod -R 777 public
 ```
-
+### add ssl
+```bash
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot --nginx
+```
 ## contributors
 * [Rosy Haqqy](https://github.com/hqlco)
 * [razan ath](https://github.com/athraz)
