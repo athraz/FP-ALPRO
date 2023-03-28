@@ -13,7 +13,7 @@
 
         <div class="col-8 mx-2">
             <h1 style="margin-bottom: 40px">{{$books->title}}</h1>
-            <h6 style="font-weight: normal; text-align: justify; margin-bottom: 40px;">{{strlen($books->desc) > 800 ? substr($books->desc, 0, 800) . "..." : $books->desc}}</h6>
+            <h6 style="font-weight: normal; text-align: justify; margin-bottom: 40px;">{{strlen($books->desc) > 1000 ? substr($books->desc, 0, 1000) . "..." : $books->desc}}</h6>
             <h5>Genre: {{$books->genre->name}}</h5>
             <h5>Author: {{$books->author->name}}</h5>
             @if (\App\Models\Review::where('book_id', $books->id)->avg('rating') > 0)
